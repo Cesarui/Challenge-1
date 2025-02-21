@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class FollowPlayerX : MonoBehaviour
 {
-
     // Plane object so we can follow it's position or have a reference
     public GameObject plane;
     // The camera offset
@@ -19,7 +18,6 @@ public class FollowPlayerX : MonoBehaviour
     // Update is called once per frame
     void LateUpdate()
     {
-        // Adds offset to the planes original position which then becomes the camera position.
         transform.position = plane.transform.position + offset;
     }
 }
